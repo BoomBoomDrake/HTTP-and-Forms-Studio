@@ -6,9 +6,10 @@
 	<script>
 		// TODO: create a handler
 	function setSearchEngine(event) {
-		// event.preventDefault();
+		
 		let text = document.querySelector('input[type=text]').value;
 		if (!text) {
+			event.preventDefault();
 			return alert('Text area must not be empty');
 		}
 		let engine = document.querySelector('input[name=engine]:checked').value;
